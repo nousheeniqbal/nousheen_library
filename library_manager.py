@@ -6,7 +6,6 @@ from datetime import datetime
 import time
 import random
 import plotly.express as px
-# print("Plotly is installed and working!")
 import plotly.graph_objects as go
 import streamlit_lottie as st_lottie
 import requests
