@@ -5,30 +5,30 @@
     "publication_year":"2013",
     "genre":"programming",
     "read_status":"false",
-    "added_data":"2025-04-10 02:20:30",
-  }
+    "added_data":"2025-04-10 02:20:30"
+  },
    {
     "title":"Python for Everybody",
     "author":"Charles severance",
     "publication_year":"2016",
     "genre":"programming",
     "read_status":"true",
-    "added_data":"2025-01-10 04:15:30",
-  }
+    "added_data":"2025-01-10 04:15:30"
+  },
    {
     "title":"Learning python",
     "author":"Mark lutz",
     "publication_year":"2013",
     "genre":"programming",
     "read_status":"false",
-    "added_data":"2025-02-09 10:15:38",
-  }
+    "added_data":"2025-02-09 10:15:38"
+  },
    {
     "title":"automate the boring Stuff with python",
     "author":"AI Sweigart",
     "publication_year":"2019",
     "genre":"programming",
     "read_status":"true",
-    "added_data":"2025-04-19 05:30:40",
+    "added_data":"2025-04-19 05:30:40"
   }
 ]
