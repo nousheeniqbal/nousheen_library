@@ -162,13 +162,13 @@ def search_books(search_term, search_by):
             results.append(book)
         elif search_by == "Genre" and search_term in book['genre'].lower():
             results.append(book)
-        #elif search_by == 'publication_year' and search_term in str(book['publication_year']):
-            #results.append(book)
+        elif search_by == 'publication_year' and search_term in str(book['publication_year']):
+            results.append(book)
 
     st.session_state.search_results = results
 
 #calculate library state
-def get_library_state():
+def get_library_stats():
     total_books = len(st.session_state.library)
     read_books = sum(1 for book in st.session_state.library if book['read_status'])
     percent_read = (read_books / total_books * 100) if total_books > 0 else 0
@@ -378,7 +378,7 @@ elif st.session_state.current_view == "stats":
     if not st.session_state.library:
         st.markdown("<div class='warning-message'>Your library is empty. Please add books to get stats!.</div>", unsafe_allow_html=True)
     else:
-        stats = get_library_state()
+        stats = get_library_stats()
         col1, col2, col3 = st.columns(3)
         with col1:
           st.metric("Total Books", stats['total_books'])
