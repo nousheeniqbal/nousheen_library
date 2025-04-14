@@ -330,7 +330,7 @@ elif st.session_state.current_view == "library":
 """, unsafe_allow_html=True) 
                 col1, col2 = st.columns(2)
                 with col1:
-                    if st.button(f"Remove", ket=f"remove_{i}", use_container_width=True):
+                    if st.button(f"Remove", key=f"remove_{i}", use_container_width=True):
                         if remove_book(i):
                          st.rerunn() 
                 with col2:
